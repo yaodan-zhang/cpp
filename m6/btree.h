@@ -113,4 +113,11 @@ void print_node(ostream& os, string const &prefix, node const &node, bool isLeft
 }
 
 // Print the tree.
-ost
+ostream& operator <<(ostream& os, btree const &bst) {
+    if (bst.root) {
+        print_node(os, "", *(bst.root), false);
+    }
+    return os;
+}
+}
+#endif
