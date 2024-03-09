@@ -34,4 +34,7 @@ int main()
   auto start = chrono::high_resolution_clock::now();
   jthreadCounter();
   auto end = chrono::high_resolution_clock::now();
-  cout << "Count 
+  cout << "Count is " << c.get() << endl;
+  cout << "Elapsed time is " << chrono::duration_cast<chrono::milliseconds>(end - start).count() << "ms" << endl;
+  return 0;
+}
