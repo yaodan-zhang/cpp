@@ -103,4 +103,18 @@ void AnimalGame () {
             continue;
         } else if (user_ans.compare("no") == 0){
             deleteTree(root);
-   
+            break;
+        } else {
+            AnimalGame();
+            deleteTree(root);
+            break;
+        }
+    }
+    
+    return;
+}
+
+int main () {
+    AnimalGame();
+    return 0;
+}
