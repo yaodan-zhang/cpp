@@ -38,4 +38,9 @@ namespace mpcs51044 {
             return top_e;
         }
         private:
-        std::vector<T> da
+        std::vector<T> data;
+        std::shared_mutex mtx;
+    };
+}
+
+#endif
