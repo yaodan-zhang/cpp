@@ -9,4 +9,7 @@ void hello_jthreads() {
 
 int
 main() {
-    // Pr
+    // Print in a different thread
+    std::jthread t(hello_jthreads);
+    // jthread will automatically join upon destruction.
+}
