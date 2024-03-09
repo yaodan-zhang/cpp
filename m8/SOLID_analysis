@@ -1,0 +1,27 @@
+This file analyzes an open-source GitHub project according to the SOLID principles.
+
+Reference (there are two major classes in this project):
+https://github.com/Rustam-Z/cpp-programming/blob/main/OOP2_Lab6/README.md
+https://github.com/Rustam-Z/cpp-programming/blob/main/OOP2_Lab6/Source.cpp
+
+Analysis based on SOLID Principles:
+1. Single Responsibility Principle (SRP):
+Good: i. The program separates functionalities into different classes (Publication, Book, Tape; ACCOUNT, CURR_ACCT, SAV_ACCT) and functions (F_First_Program, F_Second_Program), each responsible for specific tasks.
+
+ii. The program uses different methods for different tasks in a single class, e.g., getdata() and showdata() in the first class; Deposit(), Balance(), Withdraw(), Penalty() in the second class.
+
+2. Open/Closed Principle (OCP):
+Good: The program seems relatively closed for modification. New functionalities can be added by introducing new classes or functions without directly modifying existing code.
+
+Bad/Improvement: There is a potential violation of OCP due to the tight coupling between the menu logic (main function, speficically F_Second_Program in main) and the account classes (CURR_ACCT, SAV_ACCT). If new types of accounts were to be introduced, changes to the main function would likely be necessary.
+
+3. Liskov Substitution Principle (LSP):
+Good: The program uses properly the inheritance to address dependencies between Publication and Book, Publication and Tape, ACCOUNT and CURR_ACCT, ACCOUNT and SAV_ACCT.
+
+Bad/Improvement: For the first class inheritence (Publication, Book, Tape), the program doesn't use virtual type for getdata() and showdata() methods. Thus it can't achieve runtime polymorphism. To modify it, make those two methods virtual in the Publication parent class, and overload them in Book and Tape subclasses, by doing so we can achieve a better specificity when calling those methods according to object's dynamic type.
+
+4. Interface Segregation Principle (ISP):
+Good: The program uses class inheritence to implement subclasses as Book and Tape to the parent class Publication, as well as subclasses CURR_ACCT and SAV_ACCT to the parent class ACCOUNT.
+
+5. Dependency Inversion Principle (DIP):
+Bad/Improvement: The program's dependencies are tightly coupled, especially in F_First_Program and F_Second_Program, where there are lots of prespecified choices (pre-defined Book book and Tape tape (Line 251-252), CURR_ACCT account1 and SAV_ACCT account2 (Line 294-295)) and hardcoded values. It would be better to decouple these dependencies by introducing abstractions (e.g., interfaces) to allow for easier substitution of implementations.
