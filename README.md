@@ -1,1 +1,1 @@
-This repository showcases the techniques in C++ for intermediate level programmers, including class, templates, concurrency/threads, and advanced packages including std::async, std::packaged_task, std::promise, std::future, and an advanced implementation of std::function.
+This repository showcases the techniques in C++20 for intermediate level programmers, including class, templates, concurrency/threads, and advanced packages including std::async, std::packaged_task, std::promise, std::future, and an advanced implementation of std::function.
