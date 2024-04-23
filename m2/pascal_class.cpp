@@ -1,5 +1,6 @@
 /*
-This program makes Pascal's triangle into a class
+    This program makes Pascal's triangle into a class.
+    Object-oriented programming style.
 */
 #include <vector>
 #include <numeric>

@@ -1,4 +1,6 @@
-// This program prints out the first 8 rows of Pascal's triangle without formatting.
+/*
+    This program prints out the first 8 rows of Pascal's triangle without formatting.
+*/
 
 #include<vector>
 #include<iostream>

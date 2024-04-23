@@ -1,5 +1,7 @@
-/*This program investigates the naive approach, using inner product, and using std::accumilate 
-to calculate vector length. */
+/*
+    This program investigates using naive approach, inner product, and std::accumilate 
+    to calculate the vector's length.
+*/
 #include <iostream>
 #include <vector>
 #include <algorithm>

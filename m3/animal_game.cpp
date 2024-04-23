@@ -1,6 +1,8 @@
-/* This program implements the animal game using raw pointers without memory leak.
+/*
+This program implements the animal game using raw pointers without memory leak.
 However, a better practice is to use light weight RAII class, i.e., the unique_ptr, 
-for a better object life-time management. */
+for a better object life-time management.
+*/
 #include<string>
 #include<iostream>
 using namespace std;

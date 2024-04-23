@@ -1,4 +1,6 @@
-/* This program leverages constructor to print without using anything in the main function.*/
+/* 
+This program leverages constructors to print something with an empty main().
+*/
 #include "fancy_constructor.h"
 using namespace mpcs51044;
 

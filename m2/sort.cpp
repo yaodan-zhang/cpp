@@ -1,5 +1,7 @@
-/*This program investigates the performance of different sorting functions to a vector.
-The goal is to get the median of the vector. */
+/*
+    This program investigates the performance of different sorting algorithms to a vector.
+    The goal is to get the median of the vector.
+*/
 #include<algorithm>
 #include<iostream>
 using namespace std;

@@ -1,17 +1,16 @@
-// This program uses "brick-wall" formatting to print out the first 8 rows of Pascal's triangle,
-// in which the numbers of each row are presented interleaved with the numbers
-// on the rows above and below.
-// The brick size is the maximum size of any integer in the triangle, and the number is
-// centered on its brick.
+/*
+This program uses "brick-wall" formatting to print out the first 8 rows of Pascal's triangle,
+in which the numbers of each row are presented interleaved with the numbers on the rows above and below.
+
+The brick size is the maximum size of any integer in the triangle, and the number is centered on its brick.
+*/
 
 #include<vector>
 #include<iostream>
 #include <tuple>
 #include <cmath>
-//#include <format>
+#include <format>
 #define FMT_HEADER_ONLY
-#include </Users/yaodan/Desktop/MPCS51044 C++/fmt-master/include/fmt/format.h>
-using namespace fmt;
 using namespace std;
 
 // Input the number of lines n of the Pascal's triangle.
