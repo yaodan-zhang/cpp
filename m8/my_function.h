@@ -1,6 +1,5 @@
-/*Use type erasure to create my own
-implementation of std::function.
-This is the most difficult homework for the course.*/
+/*Use type erasure to create my own implementation of std::function.
+This is the most difficult task for the firt half of the modules.*/
 #ifndef MY_FUNC_H
 #define MY_FUNC_H
 #include <any>
