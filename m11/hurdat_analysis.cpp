@@ -79,4 +79,12 @@ int main() {
         std::getline(file, line);
     }
 
-    
+    // Print the Year and its Saffir-Simpson Day total
+    std::cout << "Year\tSaffir-Simpson Day Totals" << std::endl;
+    for (const auto& entry : yearSaffirSimpsonTotals) {
+        std::cout << entry.first << "\t" << entry.second << std::endl;
+    }
+
+    file.close();
+    return 0;
+}

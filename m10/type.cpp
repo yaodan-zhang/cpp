@@ -60,4 +60,5 @@ struct Reverse<tuple<B, Ts...>, A, B>
 };
 template<typename H, typename... Ts, typename A, typename B>
 struct Reverse<tuple<H, Ts...>, A, B>
-: public Append<tuple<H>, typename Reverse<tuple<Ts...>
+: public Append<tuple<H>, typename Reverse<tuple<Ts...>, A, B>::type> {
+};

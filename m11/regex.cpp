@@ -27,4 +27,13 @@ int main() {
 
     // Loop through matches and print out the decimals as:
     //1 is before the decimal and 23 is after the decimal
-    //5 is b
+    //5 is before the decimal and 6 is after the decimal
+    //7 is before the decimal and 89 is after the decimal
+    while (iter != end) {
+        std::smatch match = *iter;
+        std::cout << match[1] << " is before the decimal and " << match[2] << " is after the decimal" << std::endl;
+        ++iter;
+    }
+
+    return 0;
+}

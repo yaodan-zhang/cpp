@@ -17,4 +17,10 @@ int main() {
     // Loop through matches and print out the decimals as:
     //1 is before the decimal and 23 is after the decimal
     //5 is before the decimal and 6 is after the decimal
-    //7 is 
+    //7 is before the decimal and 89 is after the decimal
+    for (auto match : ctre::range<"\\b(\\d+)\\.(\\d+)\\b">(input)) {
+        std::cout << match.get<1>() << " is before the decimal and " << match.get<2>() << " is after the decimal" << std::endl;
+    }
+
+    return 0;
+}
