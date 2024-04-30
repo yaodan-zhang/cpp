@@ -4,4 +4,4 @@ m1-m8 focus on basic concepts including class, object-oriented programming, temp
 
 m9-m11 focus on more advanced techniques including concurrency models, type concatenation/conversion/reversion in tuples, usage of std::regex, compile-time regular expressions (ctre), and their usage in real-world dataset parsing and analysis, and to be continued...
 
-All copyrights reserved to Professor Mike Spertus, who is the designer of the homework questions, and the user, who is the implementer.
+All copyrights reserved to Professor Mike Spertus from University of Chicago, who is the designer of the homework questions, and the user, who is the implementer.
